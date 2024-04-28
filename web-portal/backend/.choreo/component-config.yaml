@@ -4,7 +4,7 @@ spec:
   # +optional Incoming connection details for the component (AKA endpoints).
   inbound:
     # +required Unique name for the endpoint. (This name will be used when generating the managed API)
-    - name: appointments
+    - name: ToDo Reminder
       # +required Numeric port value that gets exposed via the endpoint
       port: 8080
       # +required Type of traffic that the endpoint is accepting. For example: REST, GraphQL, etc.
@@ -22,8 +22,8 @@ spec:
       schemaFilePath: openapi.yaml
   outbound:
     serviceReferences:
-    - name: choreo:///codechallenge/appointment-management/cmrqnc/8b1c3/v1.0/ORGANIZATION
-      connectionConfig: 01eef67c-b6e6-17c0-9120-68782ddbb0c9
+    - name: choreo:///mobiletech/todo-management/ylqsnn/8b1c3/v1.0/ORGANIZATION
+      connectionConfig: 01ef057d-742e-10ae-9dcd-3d6362db3fcf
       env:
       - from: ServiceURL
         to: APPOINTMENT_SERVICE_URL
